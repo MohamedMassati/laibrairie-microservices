@@ -1,0 +1,498 @@
+{
+  "info": {
+    "_postman_id": "e37aaa47-35cf-42aa-b7c5-f628ace30cb5",
+    "name": "Librairie Microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53071088"
+  },
+  "item": [
+    {
+      "name": "SERVICE LIVRE",
+      "item": [
+        {
+          "name": "GetLivres",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/api/v1/livre",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "v1",
+                "livre"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetLivreByID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/api/v1/livre/69ec7884fe40bb544dcafad7",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "v1",
+                "livre",
+                "69ec7884fe40bb544dcafad7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostLivre",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titre\": \"ww\",\r\n  \"auteur\": \"Lucas\",\r\n  \"stock\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/api/v1/livre",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "v1",
+                "livre"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateLivre",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"stock\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3001/api/v1/livre/69ec7884fe40bb544dcafad7",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "v1",
+                "livre",
+                "69ec7884fe40bb544dcafad7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteLivre",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"stock\": 10\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3001/api/v1/livre/69ec7884fe40bb544dcafad7",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "v1",
+                "livre",
+                "69ec7884fe40bb544dcafad7"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SERVICE CLIENT",
+      "item": [
+        {
+          "name": "GetClient",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3003/api/v1/client",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3003",
+              "path": [
+                "api",
+                "v1",
+                "client"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetClientByID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3003/api/v1/client/69ebdcd9c4d28d5d1c57ac59",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3003",
+              "path": [
+                "api",
+                "v1",
+                "client",
+                "69ebdcd9c4d28d5d1c57ac59"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostClient",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Ali Ben Mohamed\",\r\n  \"email\": \"ali@example.com\",\r\n  \"tel\": \"0600000001\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3003/api/v1/client",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3003",
+              "path": [
+                "api",
+                "v1",
+                "client"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateClient",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"tel\": \"unknown\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3003/api/v1/client/69ebdcd9c4d28d5d1c57ac59",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3003",
+              "path": [
+                "api",
+                "v1",
+                "client",
+                "69ebdcd9c4d28d5d1c57ac59"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteClient",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3003/api/v1/client/69ebdcd9c4d28d5d1c57ac59",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3003",
+              "path": [
+                "api",
+                "v1",
+                "client",
+                "69ebdcd9c4d28d5d1c57ac59"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SERVICE EMPRUNT",
+      "item": [
+        {
+          "name": "GetEmprunts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3002/api/v1/emprunt",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3002",
+              "path": [
+                "api",
+                "v1",
+                "emprunt"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetEmpruntByID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3002/api/v1/emprunt/69ebdcd9c4d28d5d1c57ac59",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3002",
+              "path": [
+                "api",
+                "v1",
+                "emprunt",
+                "69ebdcd9c4d28d5d1c57ac59"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostEmrunt",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idClient\": \"\",\r\n  \"idLivre\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3002/api/v1/emprunt/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3002",
+              "path": [
+                "api",
+                "v1",
+                "emprunt",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostRetourLivre",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"69ec7b5922b532d6b469141d\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3002/api/v1/emprunt/retour",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3002",
+              "path": [
+                "api",
+                "v1",
+                "emprunt",
+                "retour"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SERVICE NOTIFICATION",
+      "item": [
+        {
+          "name": "GetNotifications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3004/api/v1/notification",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3004",
+              "path": [
+                "api",
+                "v1",
+                "notification"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostNotification",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"clientEmail\": \"ali@example.com\",\r\n  \"message\": \"Votre livre est disponible!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3004/api/v1/notification",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3004",
+              "path": [
+                "api",
+                "v1",
+                "notification"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SERVICE PAIEMENT",
+      "item": [
+        {
+          "name": "GetPaiement",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3005/api/v1/paiement",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3005",
+              "path": [
+                "api",
+                "v1",
+                "paiement"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PostPaiement",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idClient\": \"69ebdcd9c4d28d5d1c57ac59\",\r\n  \"montant\": 150.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3005/api/v1/paiement",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3005",
+              "path": [
+                "api",
+                "v1",
+                "paiement"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

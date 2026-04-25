@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost:27017/librairie_emprunts')
-  .then(() => console.log('✅ MongoDB connected - Service Emprunt'))
+  .then(() => console.log('MongoDB connected - Service Emprunt'))
   .catch(err => console.error(err));
 
 // POST add a borrow
